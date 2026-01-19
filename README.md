@@ -26,6 +26,6 @@
   
 <p align="center">Preview Pictures</p>
 
-![preview img](/preview.png)
+![preview img](/Preview.png)
 
 If you like this template don't forget give it a ⭐ 
