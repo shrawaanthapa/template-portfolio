@@ -51,21 +51,6 @@
 }
 
 /*====================
-    light theem
-====================*/
-@media (prefers-color-scheme: light) {
-    :root {
-        --background-color: #f6f7fb;
-        --second-background-color: #ffffff;
-        --text-color: #0f1220;
-        --muted: #4b5363;
-        --border: #e6e8ee;
-        --ring: rgba(232, 110, 54, 0.25);
-        --shadow: rgba(0, 0, 0, 0.08);
-    }
-}
-
-/*====================
     font size root
 ====================*/
 :root {
@@ -153,5 +138,6 @@ section {
     padding: 100px 10%;
 
 }
+
 
 
