@@ -1,0 +1,154 @@
+/*=====================
+    main css
+====================*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+/*====================
+    color root 
+====================*/
+:root {
+    /*====================
+        main color
+    ====================*/
+    --text-color: #f5f5f5;
+    --background-color: #250821;
+    --second-background-color: #292a33;
+    /*====================
+        hover color
+    ====================*/
+    --hover-color: #12f7ff;
+    --effect-color: #000000;
+    /*====================
+        color
+    ====================*/
+    --text-heding-color: #e7e9ee;
+    --text-paragraph-color: #e7e9ee;
+    --span-color: #e7e9ee;
+    /*====================
+        box shadow
+    ====================*/
+    --neon-box-shadow: 0 0 0.8rem #12f7ff;
+
+    /*====================
+        text shadow
+    ====================*/
+    --font-neon-text-shadow: 0 0 10px rgba(0, 247, 255, 0.664),
+        0 0 20px rgba(18, 247, 255, 0.3),
+        0 0 30px rgba(18, 247, 255, 0.3),
+        0 0 40px rgba(18, 247, 255, 0.3),
+        0 0 70px rgba(18, 247, 255, 0.3),
+        0 0 80px rgba(18, 247, 255, 0.3),
+        0 0 100px rgba(18, 247, 255, 0.3),
+        0 0 150px rgba(18, 247, 255, 0.3);
+}
+
+/*====================
+    light theem
+====================*/
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-color: #f6f7fb;
+        --second-background-color: #ffffff;
+        --text-color: #0f1220;
+        --muted: #4b5363;
+        --border: #e6e8ee;
+        --ring: rgba(232, 110, 54, 0.25);
+        --shadow: rgba(0, 0, 0, 0.08);
+    }
+}
+
+/*====================
+    font size root
+====================*/
+:root {
+    /*====================
+        font size
+    ====================*/
+    --big-font: 2.5rem;
+    --normal-font: 2rem;
+    --h2-font: 3rem;
+}
+
+/*====================
+    heading color
+====================*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #12f7ff;
+}
+
+/*====================
+    text color
+====================*/
+b,
+.change-text span,
+.info-box .span,
+.info-about1,
+.info-about2,
+.info-about3,
+.info-about4,
+.skills h2,
+.services h2,
+.services-box h3,
+.port-content a button,
+.portfolio h2,
+.contact form button,
+.contact h2 {
+    color: #12f7ff;
+}
+
+/*====================
+    text color#12f7ff;
+====================*/
+span,
+.navlist a,
+.main-text span,
+.about-content span,
+p,
+.skill-main h3,
+.box .text,
+.port-content h3,
+.fillter-buttons .button,
+.port-content p {
+    color: #e7e9ee;
+}
+
+/*====================
+    html style
+====================*/
+html {
+    overflow-x: hidden;
+}
+
+/*====================
+    body style
+====================*/
+body {
+    font-family: apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, "Helvetica Neue", Arial,
+        "Noto Sans", sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background: radial-gradient(1200px 600px at 70% -10%, rgba(232, 110, 54, 0.12), transparent 60%),
+        radial-gradient(900px 400px at 10% -10%, rgba(255, 178, 106, 0.10), transparent 55%),
+        var(--background-color);
+    color: var(--text-color);
+}
+
+/*====================
+    section style
+====================*/
+section {
+    padding: 100px 10%;
+}

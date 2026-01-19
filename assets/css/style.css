@@ -1,0 +1,1192 @@
+/*====================
+    header css
+====================*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 10%;
+}
+
+/*====================
+    sticky header css
+====================*/
+header.sticky {
+    background: var(--background-color);
+    border-bottom: 1px solid var(--second-background-color);
+    padding: 12px 10%;
+}
+
+/*====================
+    logo css
+====================*/
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+/*====================
+    logo hover css
+====================*/
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/*====================
+    navigation css
+====================*/
+.navlist {
+    display: flex;
+}
+
+/*====================
+    navigation link css
+====================*/
+.navlist a {
+    display: inline-block;
+    font-weight: 500;
+    padding: 10px 20px;
+    animation: slideAnimation 1s ease forwards;
+    animation-delay: calc(.3s * var(--i));
+    opacity: 0;
+}
+
+/*====================
+    navigation link hover css
+====================*/
+.navlist a:hover {
+    color: var(--hover-color);
+    text-shadow: 0 0 10px rgba(18, 247, 255, 0.3),
+        0 0 20px rgba(18, 247, 255, 0.3),
+        0 0 30px rgba(18, 247, 255, 0.3),
+        0 0 40px rgba(18, 247, 255, 0.3),
+        0 0 70px rgba(18, 247, 255, 0.3),
+        0 0 80px rgba(18, 247, 255, 0.3),
+        0 0 100px rgba(18, 247, 255, 0.3),
+        0 0 150px rgba(18, 247, 255, 0.3);
+}
+
+/*====================
+    active navigation link css
+====================*/
+.navlist a.active {
+    color: var(--hover-color);
+}
+
+/*====================
+    menu icon css
+====================*/
+#menu-icon {
+    font-size: 1.8rem;
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    background: var(--hover-color);
+    border-radius: 3px;
+    color: var(--second-background-color);
+    display: none;
+}
+
+/*====================
+    home section css
+====================*/
+.home {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 4rem
+}
+
+/*====================
+    home content css
+====================*/
+.home-content {
+    max-width: 600px;
+}
+
+/*====================
+    home content heading css
+====================*/
+.home-content h1 {
+    font-size: var(--big-font);
+    font-weight: 700;
+}
+
+/*====================
+    change text css
+====================*/
+.change-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/*====================
+    change text span text shadow css
+====================*/
+.change-text span {
+    text-shadow: 0 0 0.8rem #12f7ff;
+}
+
+/*====================
+    change text animation css
+====================*/
+.change-text h3 {
+    display: inline-flex;
+    margin: 0;
+    vertical-align: top;
+}
+
+/*====================
+    change text word animation css
+====================*/
+.change-text h3 .word {
+    position: absolute;
+    display: flex;
+    opacity: 0;
+
+}
+
+/*====================
+    change text word animation active css
+====================*/
+.change-text h3 .word .letter {
+    transform-origin: center center 25px;
+}
+
+/*====================
+    change text word animation out css
+====================*/
+.change-text h3 .word .letter.out {
+    transform: rotateX(90deg);
+    transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+}
+
+/*====================
+    change text word animation in css
+====================*/
+.change-text h3 .word .letter.in {
+    transition: 0.38s ease;
+}
+
+/*====================
+    change text word animation behind css
+====================*/
+.change-text h3 .word .letter.behind {
+    transform: rotateX(-90deg);
+}
+
+/*====================
+    home content paragraph css
+====================*/
+.home-content p {
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    font-size: 1em;
+}
+
+/*====================
+    info box css
+====================*/
+.info-box {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin: 1rem 0 2rem;
+}
+
+/*====================
+    info box heading css
+====================*/
+.info-box h5 {
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+/*====================
+    info box span css
+====================*/
+.info-box span {
+    font-size: .9rem;
+}
+
+/*====================
+    button box css
+====================*/
+.btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    height: 45px;
+}
+
+/*====================
+    button css
+====================*/
+.btn-box .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: var(--hover-color);
+    color: var(--background-color);
+    box-shadow: 0 0 0.8rem #12f7ff;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: .6s;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: 2px solid var(--hover-color);
+}
+
+/*====================
+    button hover css
+====================*/
+.btn:hover {
+    color: var(--hover-color);
+}
+
+/*====================
+    button before css
+====================*/
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--background-color);
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: .4s;
+}
+
+/*====================
+    button hover before css
+====================*/
+.btn:hover::before {
+    width: 100%;
+}
+
+/*====================
+    social icons css
+====================*/
+.social-icons {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    height: 40px;
+}
+
+/*====================
+    social icons link css
+====================*/
+.social-icons a {
+    display: inline-flex;
+    width: 50px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-color);
+    color: var(--hover-color);
+    border: 2px solid var(--hover-color);
+    box-shadow: 0 0 0.8rem #12f7ff;
+    transition: .6s;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+/*====================
+    social icons link icon css
+====================*/
+.social-icons a i {
+    font-size: 1.5rem;
+}
+
+/*====================
+    social icons link hover css
+====================*/
+.social-icons a:hover {
+    color: var(--background-color);
+}
+
+/*====================
+    social icons link before css
+====================*/
+.social-icons a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--hover-color);
+    transition: .6s;
+    z-index: -1;
+}
+
+/*====================
+    social icons link hover before css
+====================*/
+.social-icons a:hover::before {
+    width: 100%;
+}
+
+/*====================
+    home image css
+====================*/
+.home-image {
+    position: relative;
+}
+
+/*====================
+    image box css
+====================*/
+.img-box {
+    text-align: center;
+}
+
+/*====================
+    image box image css
+====================*/
+.img-box img {
+    width: 100%;
+    max-width: 350%;
+    height: auto;
+    filter: drop-shadow();
+}
+
+/*====================
+    home liquid shape css
+====================*/
+.liquid-shape {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 10%;
+}
+
+/*====================
+    first liquid shape css
+====================*/
+.liquid-shape:nth-child(2) {
+    filter: blur(80px);
+}
+
+/*====================
+    second liquid shape css
+====================*/
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2em;
+    background: var(--second-background-color);
+}
+
+/*====================
+    about section css
+====================*/
+.about .img-about {
+    text-align: center;
+    position: relative;
+}
+
+/*====================
+    about section image css
+====================*/
+.about .img-about img {
+    max-width: 400px;
+    height: auto;
+}
+
+/*====================
+    about content css
+====================*/
+.about-content span {
+    font-size: .8rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/*====================
+    about content heading css
+====================*/
+.about-content h2 {
+    color: var(--hover-color);
+    font-weight: 700;
+    font-size: var(--normal-font);
+}
+
+/*====================
+    about content sub heading css
+====================*/
+.about-content h3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: .2rem;
+}
+
+/*====================
+    about content paragraph css
+====================*/
+.about-content p {
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    font-size: 1em;
+}
+
+/*====================
+    about info circle css
+====================*/
+.info-about1,
+.info-about2,
+.info-about3,
+.info-about4 {
+    background: transparent;
+    font-size: .5rem;
+    position: absolute;
+    padding: 10px;
+    width: 90px;
+    height: 90px;
+    border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+    display: block;
+    box-shadow: 0 0 0.8rem #12f7ff;
+    border: 1px solid var(--hover-color);
+    outline: 2px solid var(--background-color);
+    z-index: 100;
+    animation: morph 6s linear infinite;
+}
+
+/*====================
+    about info circle position css
+====================*/
+.info-about1 {
+    left: 5%;
+    top: 24%;
+}
+
+/*====================
+    about info circle position css
+====================*/
+.info-about2 {
+    left: 83%;
+    top: 3%;
+}
+
+/*====================
+    about info circle position css
+====================*/
+.info-about3 {
+    left: 42%;
+    top: 44%;
+}
+
+/*====================
+    about info circle position css
+====================*/
+.info-about4 {
+    left: 3%;
+    top: 77%;
+}
+
+/*====================
+    image about text css
+====================*/
+.img-about span {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/*====================
+    main text css
+====================*/
+.main-text {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2rem;
+}
+
+/*====================
+    main text heading css
+====================*/
+.main-text h2 {
+    font-weight: 700;
+    font-size: var(--normal-font);
+}
+
+/*====================
+    main text span css
+====================*/
+.main-text span {
+    font-size: .8rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/*====================
+    services section css
+====================*/
+.section-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap: 2rem;
+}
+
+/*====================
+    services box css
+====================*/
+.section-services .services-box {
+    flex: 1 1 18rem;
+    padding: 2rem 1rem 2rem;
+    margin-top: 3rem;
+    text-align: center;
+    background: var(--second-background-color);
+    box-shadow: 0 0 0.8rem #12f7ff;
+    border-radius: 10px;
+    transition: transform .5s;
+
+}
+
+/*====================
+    services-box h3 css
+====================*/
+.services-box h3 {
+    padding: 1em;
+    font-size: min(7.5vw, 10vh);
+}
+
+.scribble {
+    position: relative;
+    background-image: none;
+    background-color: transparent;
+
+    &::after {
+        content: '';
+        position: absolute;
+        color: var(--hover-color);
+        bottom: -10%;
+        left: 0;
+        height: 30%;
+        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='247' height='22' fill='none'%3E%3Cmask id='a' width='246' height='23' x='0' y='1' maskUnits='userSpaceOnUse' style='mask-type:alpha'%3E%3Cpath fill='%23D9D9D9' d='M0 1h246v23H0z'/%3E%3C/mask%3E%3Cg mask='url(%23a)'%3E%3Cpath fill='%2300a661' d='M.225 13.987c40.77-3.247 81.218-6.304 122.486-5.61 40.217.68 80.07 3.493 119.823 8.284 4.828.577 4.966-4.727.193-5.301-40.597-4.886-82.029-7.082-123.059-6.436-39.896.627-80.713 2.548-119.53 8.822-.233.04-.132.263.087.25v-.009z'/%3E%3C/g%3E%3C/svg%3E");
+        mask-repeat: no-repeat;
+        mask-size: 95%;
+        width: 100%;
+        background-image: linear-gradient(to right,
+                currentcolor 40%,
+                transparent 50%);
+        background-repeat: no-repeat;
+        animation: background-size-300 2.5s 2.5s ease-in both infinite alternate;
+        background-size: 300%
+    }
+}
+
+/*====================
+    services button css
+====================*/
+.services-btn {
+    width: auto;
+    justify-content: center;
+}
+
+/*====================
+    services box hover css
+====================*/
+.services-box:hover {
+    transform: translateY(-.7rem);
+}
+
+/*====================
+    services icon css
+====================*/
+.services-icon {
+    border: 2px solid var(--hover-color);
+    padding: 2rem;
+    background: var(--background-color);
+    display: inline-flex;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 50px;
+    position: relative;
+    color: var(--hover-color);
+    box-shadow: 0 0 0.8rem #12f7ff;
+    outline: 3px solid var(--background-color);
+}
+
+/*====================
+    services box heading css
+====================*/
+.services-box h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+/*====================
+    services box paragraph css
+====================*/
+.services-box p {
+    margin: .5rem 0 1.5rem 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    font-size: 1em;
+}
+
+/*====================
+
+====================*/
+.skills {
+    background: var(--second-background-color);
+}
+
+/*====================
+    skills main css
+====================*/
+.skill-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+
+/*====================
+    skills left section css
+====================*/
+.skill-bar {
+    margin-bottom: 2.3rem;
+}
+
+/*====================
+    skills heading css
+====================*/
+.skill-main h3 {
+    margin-bottom: 2rem;
+    font-size: var(--normal-font);
+    text-align: center;
+}
+
+/*====================
+    skills left section heading css
+====================*/
+.skill-left .skill-bar .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+/*====================
+    skills left section skill bar css 
+====================*/
+.skill-left .skill-bar .bar {
+    width: 100%;
+    height: 10px;
+    background: var(--background-color);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+/*====================
+    skills left section skill span css
+====================*/
+.skill-bar .bar span {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: var(--hover-color);
+    border-radius: 25px;
+    box-shadow: 0 0 0.8rem #12f7ff;
+}
+
+/*====================
+    skills left section skill html css
+====================*/
+.skill-bar .bar .html {
+    width: 72%;
+    animation: html 6s infinite;
+}
+
+/*====================
+    skills left section skill css css
+====================*/
+.skill-bar .bar .css {
+    width: 62%;
+    animation: css 6s infinite;
+}
+
+/*====================
+    skills left section skill javascript css
+====================*/
+.skill-bar .bar .javascript {
+    width: 52%;
+    animation: javascript 6s linear infinite;
+}
+
+/*====================
+    skills left section skill react css
+====================*/
+.skill-bar .bar .react {
+    width: 42%;
+    animation: react 6s infinite;
+}
+
+/*====================
+    skills left section skill node js css
+====================*/
+.professional {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*====================
+    skills right section skill box css
+====================*/
+.box {
+    position: relative;
+    margin: 10px 0;
+    flex: 1 1 15rem;
+}
+
+/*====================
+    skills right section skill box text css
+====================*/
+.box .text {
+    text-align: center;
+    font-size: 1rem;
+}
+
+/*====================
+    skills right section skill box text big css
+====================*/
+.box .text big {
+    font: 400;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*====================
+    skills right section skill box text small css
+====================*/
+.box .text small {
+    display: block;
+    font-weight: 600;
+
+}
+
+/*====================
+    skills right section skill box circle css
+====================*/
+.circle {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*====================
+    skills right section skill box circle inner css
+====================*/
+.circle .points {
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background: var(--background-color);
+    border-radius: 50%;
+    transform: rotate(calc(var(--i)*var(--rot))) translateY(-45px);
+}
+
+/*====================
+    skills right section skill box circle marked css
+====================*/
+.points.marked {
+    animation: glow 0.04s linear forwards;
+    animation-delay: calc(var(--i)*0.05s);
+}
+
+/*====================
+    portfolio section css
+====================*/
+.fillter-buttons {
+    margin: 2rem;
+    text-align: center;
+}
+
+/*====================
+    portfolio section button css
+====================*/
+.fillter-buttons .button {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: .85rem;
+    font-weight: 600;
+    letter-spacing: .4px;
+    margin-left: 1.3rem;
+}
+
+/*====================
+    portfolio section button hover css
+====================*/
+.fillter-buttons .button:hover {
+    color: var(--hover-color);
+    text-shadow: 0 0 10px rgba(2, 3, 3, 0.3),
+    0 0 20px rgba(18, 247, 255, 0.3),
+    0 0 30px rgba(18, 247, 255, 0.3),
+    0 0 40px rgba(18, 247, 255, 0.3),
+    0 0 70px rgba(18, 247, 255, 0.3),
+    0 0 80px rgba(18, 247, 255, 0.3),
+    0 0 100px rgba(18, 247, 255, 0.3),
+    0 0 150px rgba(18, 247, 255, 0.3);
+}
+
+/*====================
+    portfolio section button active css
+====================*/
+.portfolio-gallery {
+    display: grid;
+    /*grid-template-columns: repeat(3, 1fr);*/
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 2rem
+}
+
+/*====================
+    portfolio box css
+====================*/
+.port-box {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: var(--background-color);
+    display: flex;
+    grid-template-rows: 1fr auto;
+    align-items: center;
+    border: 2px solid var(--hover-color);
+    box-shadow: 0 0 0.8rem #12f7ff;
+}
+
+/*====================
+    portfolio image css
+====================*/
+.port-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+/*====================
+    portfolio image img css
+====================*/
+.port-image img {
+    width: 100%;
+    opacity: .55s;
+    height: 100%;
+    transition: .5s;
+}
+
+/*====================
+    portfolio content css
+====================*/
+.port-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: linear-gradient(rgba(0, 0, 0, .2), var(--background-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.5s;
+    padding: 0 2rem;
+}
+
+/*====================
+    portfolio box hover css
+====================*/
+.port-box:hover .port-content {
+    opacity: 1;
+}
+
+/*====================
+    portfolio image hover css
+====================*/
+.port-box:hover .port-image img {
+    transform: scale(1.1);
+}
+
+/*====================
+    portfolio content heading css
+====================*/
+.port-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/*====================
+    portfolio content paragraph css
+====================*/
+.port-content p {
+    font-size: .8em;
+    margin: 5px 0 14px 0;
+}
+
+/*====================
+    portfolio content link css
+====================*/
+.port-content a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+/*====================
+    portfolio content link icon css
+====================*/
+.port-content a i {
+    font-size: 1.3rem;
+    color: var(--hover-color);
+    transition: .3s;
+}
+
+/*====================
+    portfolio content link icon hover css
+====================*/
+.port-content a:hover i {
+    color: var(--hover-color);
+    transform: scale(1.1);
+}
+
+/*====================
+    contact section css
+====================*/
+.contact {
+    background: var(--second-background-color);
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/*====================
+    contact form css
+====================*/
+.contact form {
+    text-align: center;
+    max-width: 50rem;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+}
+
+/*====================
+    heading contact css
+====================*/
+.contact form input {
+    width: 49%;
+    color: var(--background-color);
+    background: var(--background-color);
+    margin-bottom: .8rem;
+    border: 1px solid var(--hover-color);
+    box-shadow: 0 0 0.8rem #12f7ff;
+    border-radius: 5px;
+    padding: .7rem;
+}
+
+/*====================
+    heading contact css
+====================*/
+.contact form textarea {
+    width: 89%;
+    color: var(--background-color);
+    background: var(--background-color);
+    margin-bottom: .8rem;
+    border: 1px solid var(--hover-color);
+    box-shadow: 0 0 0.8rem #12f7ff;
+    border-radius: 5px;
+    padding: .7rem;
+}
+
+/*====================
+    contact form textarea css
+====================*/
+.contact form textarea {
+    resize: none;
+}
+
+/*====================
+    form button box css
+====================*/
+.formBtn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/*====================
+    form button css
+====================*/
+.formBtn {
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/*====================
+    footer css
+====================*/
+.footer {
+    position: relative;
+    bottom: o;
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--background-color);
+}
+
+/*====================
+    footer social css
+====================*/
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--hover-color);
+}
+
+/*====================
+    footer social link css
+====================*/
+.footer .social a {
+    font-size: 25px;
+    color: var(--hover-color);
+    border: 2px solid var(--hover-color);
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+}
+
+/*====================
+    footer social link hover css
+====================*/
+.footer .social a:hover {
+    transform: scale(1.2) translateY(-10px);
+    background: var(--hover-color);
+    color: var(--background-color);
+    box-shadow: 0 0 25px var(--hover-color);
+}
+
+/*====================
+    footer ul css
+====================*/
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/*====================
+    footer ul link css
+====================*/
+.footer ul li a {
+    color: var(--text-color);
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+
+/*====================
+    footer ul link hover css
+====================*/
+.footer ul li a:hover {
+    border-bottom: 3px solid var(--hover-color);
+}
+
+/*====================
+    footer ul list css
+====================*/
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+/*====================
+    footer copyright css
+====================*/
+.footer .copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+/*====================
+    footer h3 css
+====================*/
+.footer h3 {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+/*====================
+    footer h3 link css
+====================*/
+.footer h3 a {
+    color: red;
+    text-decoration: none;
+}
+
+/*====================
+    footer h3 link hover css
+====================*/
+.footer h3 a:hover {
+    color: red;
+    text-decoration: underline;
+}

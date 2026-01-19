@@ -1,0 +1,91 @@
+/*====================
+     about button
+====================*/
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 320px;
+    height: 45px;
+    border: none;
+    box-shadow: none;
+    width: 150px;
+    height: 100%;
+    line-height: 42px;
+    -webkit-perspective: 230px;
+    perspective: 230px;
+    cursor: pointer;
+    
+}
+
+.btn span {
+    /*
+    background: rgba(55, 201, 120, 1);
+    background: linear-gradient(0deg, rgba(55, 201, 120, 1) 0%, rgba(55, 201, 120, 1) 100%);*/
+    display: block;
+    position: absolute;
+    font-weight: 600;
+    text-transform: capitalize;
+    width: 130px;
+    height: 40px;
+    box-shadow: 0 0 0.8rem #12f7ff;
+    border-radius: 5px;
+    margin: 0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.btn span:nth-child(1) {
+    box-shadow: 0 0 0.8rem #12f7ff;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+}
+
+.btn span:nth-child(2) {
+    background: var(--background-color);
+    color: var(--hover-color);
+   -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+}
+
+.btn:hover span:nth-child(1) {
+    color: var(--hover-color);
+    box-shadow: 0 0 0.8rem #12f7ff;
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+.btn:hover span:nth-child(2) {
+    box-shadow: 0 0 0.8rem #12f7ff;
+    color: transparent;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+
+.btn:nth-child(2) {
+    background: var(--background-color);
+    color: var(--hover-color);
+}
+
+.btn:nth-child(2):hover {
+    color: var(--background-color);
+}
+
+.btn:nth-child(2)::before {
+    background: var(--hover-color);
+}
