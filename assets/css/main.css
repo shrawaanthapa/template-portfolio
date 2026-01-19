@@ -140,9 +140,7 @@ body {
         "Segoe UI", Roboto, "Helvetica Neue", Arial,
         "Noto Sans", sans-serif, "Apple Color Emoji",
         "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    background: radial-gradient(1200px 600px at 70% -10%, rgba(232, 110, 54, 0.12), transparent 60%),
-        radial-gradient(900px 400px at 10% -10%, rgba(255, 178, 106, 0.10), transparent 55%),
-        var(--background-color);
+    background: var(--background-color);
     color: var(--text-color);
 }
 
@@ -153,3 +151,4 @@ section {
     padding: 100px 10%;
 
 }
+
