@@ -399,14 +399,14 @@ header.sticky {
     width: 100%;
     height: 100%;
     z-index: -1;
-    top: 10%;
+    top: 12%;
 }
 
 /*====================
     first liquid shape css
 ====================*/
 .liquid-shape:nth-child(2) {
-    filter: blur(80px);
+    filter: blur(85px);
 }
 
 /*====================
@@ -501,23 +501,23 @@ header.sticky {
     about info circle position css
 ====================*/
 .info-about1 {
-    left: 5%;
-    top: 24%;
+    left: 9%;
+    top: 32%;
 }
 
 /*====================
     about info circle position css
 ====================*/
 .info-about2 {
-    left: 83%;
-    top: 3%;
+    left: 73%;
+    top: 9%;
 }
 
 /*====================
     about info circle position css
 ====================*/
 .info-about3 {
-    left: 42%;
+    left: 36%;
     top: 44%;
 }
 
@@ -1197,5 +1197,6 @@ header.sticky {
     text-decoration: underline;
 
 }
+
 
 
