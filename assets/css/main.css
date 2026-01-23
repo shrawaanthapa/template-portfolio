@@ -84,7 +84,7 @@ b,
 .info-about2,
 .info-about3,
 .info-about4,
-.skills h4,
+.skills h2,
 .services h2,
 .services-box h3,
 .port-content a button,
@@ -157,6 +157,7 @@ section {
 .fa-github:hover {
     color: rgb(255, 123, 0);
 }
+
 
 
 
