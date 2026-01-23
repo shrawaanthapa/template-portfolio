@@ -584,7 +584,6 @@ header.sticky {
     margin-top: 3rem;
     text-align: center;
     background: var(--second-background-color);
-    box-shadow: 0 0 0.8rem #12f7ff;
     border-radius: 10px;
     transition: transform .5s;
 
@@ -910,8 +909,6 @@ header.sticky {
     display: flex;
     grid-template-rows: 1fr auto;
     align-items: center;
-    border: 2px solid var(--hover-color);
-    box-shadow: 0 0 0.8rem #12f7ff;
 }
 
 /*====================
@@ -973,6 +970,7 @@ header.sticky {
     portfolio content heading css
 ====================*/
 .port-content h3 {
+    color: var(--hover-color);
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -1000,7 +998,7 @@ header.sticky {
 ====================*/
 .port-content a i {
     font-size: 1.3rem;
-    color: var(--hover-color);
+    color: var(--text-color);
     transition: .3s;
 }
 
@@ -1040,8 +1038,6 @@ header.sticky {
     color: var(--background-color);
     background: var(--background-color);
     margin-bottom: .8rem;
-    border: 1px solid var(--hover-color);
-    box-shadow: 0 0 0.8rem #12f7ff;
     border-radius: 5px;
     padding: .7rem;
 }
@@ -1054,8 +1050,6 @@ header.sticky {
     color: var(--background-color);
     background: var(--background-color);
     margin-bottom: .8rem;
-    border: 1px solid var(--hover-color);
-    box-shadow: 0 0 0.8rem #12f7ff;
     border-radius: 5px;
     padding: .7rem;
 }
@@ -1203,4 +1197,5 @@ header.sticky {
     text-decoration: underline;
 
 }
+
 
