@@ -41,6 +41,10 @@
     #menu-icon.bx-x{
         transform: rotate(-180deg);
     }
+       .icons {
+        display: block;
+        transition: all .4s ease;
+    }
     .navlist{
         display: flex;
         position: absolute;
@@ -49,7 +53,7 @@
         left: 0;
         flex-direction: column;
         background: var(--background-color);
-        text-align: left;
+        text-align: center;
         padding: 0 5%;
         transition: all .45s ease;
     }
@@ -114,3 +118,4 @@
     }
 
 }
+
