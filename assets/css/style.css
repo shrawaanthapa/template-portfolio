@@ -97,6 +97,19 @@ header.sticky {
 }
 
 /*====================
+    menu icon toogle css
+====================*/
+.icons {
+    display: none;
+}
+
+.icons i {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+/*====================
     home section css
 ====================*/
 .home {
@@ -1190,3 +1203,4 @@ header.sticky {
     text-decoration: underline;
 
 }
+
