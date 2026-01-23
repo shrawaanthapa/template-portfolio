@@ -43,7 +43,6 @@
     }
        .icons {
         display: block;
-        transition: all .4s ease;
     }
     .navlist{
         display: flex;
@@ -118,4 +117,5 @@
     }
 
 }
+
 
