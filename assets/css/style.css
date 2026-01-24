@@ -109,13 +109,6 @@ header.sticky {
     font-size: 22px;
     transition: color 0.3s ease;
 }
-
-.icons h3 {
-    font-size: 18px;
-    color: var(--hover-color);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 600;
-}
 /*====================
     home section css
 ====================*/
@@ -1204,6 +1197,7 @@ header.sticky {
     text-decoration: underline;
 
 }
+
 
 
 
