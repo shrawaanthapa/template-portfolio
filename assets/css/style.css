@@ -97,16 +97,24 @@ header.sticky {
 }
 
 /*====================
-    menu icon toogle css
+    icons toggle memu css
 ====================*/
 .icons {
     display: none;
+    margin-top: 15px;
 }
 
 .icons i {
-    padding: 3px 6px;
-    display: inline-block;
-    cursor: pointer;
+    margin: 0 10px;
+    font-size: 22px;
+    transition: color 0.3s ease;
+}
+
+.icons h3 {
+    font-size: 18px;
+    color: var(--hover-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
 }
 /*====================
     home section css
@@ -1196,6 +1204,7 @@ header.sticky {
     text-decoration: underline;
 
 }
+
 
 
 
